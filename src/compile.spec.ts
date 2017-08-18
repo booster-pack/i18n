@@ -3,7 +3,7 @@ import { Compile as AClass } from './compile';
 const classInstance = new AClass();
 
 describe(classInstance.constructor.name, () => {
-  let path;
+  let path:string;
   beforeEach(() => {
     path = 'fixtures/compile-test.ts';
   });

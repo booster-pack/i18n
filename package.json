@@ -1,14 +1,13 @@
 {
-  "name": "i18n",
-  "version": "0.0.0",
-  "description": "i18n",
+  "name": "@booster-pack/i18n",
+  "version": "0.0.1",
+  "description": "@booster-pack/i18n",
   "license": "MIT",
-  "repository": "https://github.com/booster-pack/i18n",
-  "author": {
-    "name": "matthew harwood",
-    "email": "matthhar12@gmail.com",
-    "url": "www.morningharwood.com"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/booster-pack/i18n.git"
   },
+  "author": "matthew harwood <matthhar12@gmail.com> (www.morningharwood.com)",
   "keywords": [
     "i18n, angular2, angular, static generator"
   ],
@@ -30,6 +29,8 @@
     "watch:test": "jest --watch"
   },
   "dependencies": {
+    "@types/fs-extra": "^4.0.0",
+    "fs-extra": "^4.0.1"
   },
   "devDependencies": {
     "@types/jest": "^20.0.5",
@@ -60,5 +61,12 @@
       "js"
     ],
     "testEnvironment": "node"
+  },
+  "bugs": {
+    "url": "https://github.com/booster-pack/i18n/issues"
+  },
+  "homepage": "https://github.com/booster-pack/i18n#readme",
+  "directories": {
+    "lib": "lib"
   }
 }

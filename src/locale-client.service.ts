@@ -1,7 +1,7 @@
 import { ILocale } from './locale.interface';
 
 export class LocalesClientService {
-  public ls(list: ILocale[]) {
+  public static ls(list: ILocale[]) {
     const locales = new Set();
     list.push({
       language: 'ALL',

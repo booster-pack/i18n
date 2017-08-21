@@ -4,9 +4,9 @@ import { ILocale } from './locale.interface';
 const classInstance = new AClass();
 
 describe(classInstance.constructor.name, () => {
-  let jsPath:string;
-  let tsPath:string;
-  let mockData:ILocale[];
+  let jsPath: string;
+  let tsPath: string;
+  let mockData: ILocale[];
 
   beforeEach(() => {
     tsPath = 'fixtures/compile-test.ts';

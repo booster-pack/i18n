@@ -1,5 +1,6 @@
 import { ILocale } from './locale.interface';
 
+// @Injectable()
 export class LocalesClientService {
   public static ls(list: ILocale[]) {
     const locales = new Set();
@@ -7,13 +8,19 @@ export class LocalesClientService {
       language: 'ALL',
       region: 'ALL',
     });
-
+    // TODO(mharwood) allow support of union type of [] vs {} for language.
+    // language: ['en', 'fr']
+    // region: 'ca'
     for (const locale of list) {
       const isLocale = () => (locale.region ? `_${locale.region}` : '');
       locales.add(`${locale.language}${isLocale()}`);
     }
 
     return locales;
+  }
+
+  public static blackList() {
+    // Stub
   }
 }
 
